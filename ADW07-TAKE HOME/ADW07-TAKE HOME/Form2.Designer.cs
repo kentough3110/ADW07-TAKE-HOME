@@ -20,21 +20,6 @@
             base.Dispose(disposing);
         }
 
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // Form2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 626);
-            this.Name = "form2";
-            this.Text = "form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.ResumeLayout(false);
-
-        }
         #region Windows Form Designer generated code
 
         /// <summary>

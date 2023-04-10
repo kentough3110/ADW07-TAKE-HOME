@@ -29,6 +29,7 @@ namespace ADW07_TAKE_HOME
         List<string> listofwords = new List<string>();
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.White;
             boxMaker();
             result();
         }
@@ -100,9 +101,9 @@ namespace ADW07_TAKE_HOME
             {
                 
                 listofwords = new List<string>();
-                foreach (string wordLine in arrWords)
+                foreach (string word in arrWords)
                 {
-                    listofwords.Add(wordLine);
+                    listofwords.Add(word);
                 }
                 int answNum = rnd.Next(0, listofwords.Count - 1);
                 answer = listofwords[answNum].ToUpper();
@@ -124,12 +125,12 @@ namespace ADW07_TAKE_HOME
             }
             else
             {
-                string kata = "";
+                string wordy = "";
                 for (int i = 0; i < tbi; i++)
                 {
-                    kata += arrButton[i, tbj].Text;
+                    wordy += arrButton[i, tbj].Text;
                 }
-                if (listofwords.Contains(kata.ToLower()))
+                if (listofwords.Contains(wordy.ToLower()))
                 {
                     for (int i = 0; i < tbi; i++)
                     {
