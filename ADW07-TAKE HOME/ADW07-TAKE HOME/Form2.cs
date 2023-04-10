@@ -151,7 +151,7 @@ namespace ADW07_TAKE_HOME
                         MessageBox.Show("You won!", "WINNER");
                         this.Close();
                     }
-                    else if (countGreen < 5 && tbj == size || tbj == size)
+                    else if (countGreen != 5 && tbj == size)
                     {
                         MessageBox.Show("Game over! correct word is " + answer, "GAME OVER");
                         this.Close();
